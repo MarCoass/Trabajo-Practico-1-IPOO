@@ -1,0 +1,24 @@
+1) Objeto: es un ente que tiene estado y comportamiento definidos.
+    Clase: es la "plantilla" para la creacion de un objeto, define los metodos y atributos.
+    Metodo: las sentencias para llevar a cabo una accion.
+    Atributos: define una propiedad de un objeto.
+
+2) 
+
+3) Mouse (C)
+    televisor (C)
+    darCanalActual (M)
+    configurarDespertador (M)
+    reloj (C)
+    mover (M)
+    fechaNacimiento (A)
+    encender (M)
+    persona (C)
+    darHoraActual (M)
+    irCanalTv (M)
+    inalambrico (A)
+    ponerHora (M)
+    documento (A)
+    darPosicionActual (M)
+
+
