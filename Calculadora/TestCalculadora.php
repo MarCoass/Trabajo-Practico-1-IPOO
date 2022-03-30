@@ -17,29 +17,4 @@ Valor B = " . $b ."
 
 $cuenta->setValorA($a);
 $cuenta->setValorB($b);
-
-//SUMA
-echo "----------------SUMA---------------------------
-";
-$cuenta -> suma();
-echo $cuenta->getValorA() . " + " . $cuenta->getValorB() ." = " . $cuenta->__toString();
-//RESTA
-echo "
----------------------RESTA----------------------
-";
-$cuenta -> resta();
-echo $cuenta->getValorA() . " - " . $cuenta->getValorB() ." = " . $cuenta->__toString();
-//MULTIPLICACION
-echo "
----------------------MULTIPLICACION----------------------
-";
-$cuenta -> multiplicacion();
-echo $cuenta->getValorA() . " * " . $cuenta->getValorB() ." = " . $cuenta->__toString();
-//DIVISION
-echo "
----------------------DIVISION----------------------
-";
-$cuenta -> division();
-echo $cuenta->getValorA() . " / " . $cuenta->getValorB() ." = " . $cuenta->__toString();
-
-
+echo $cuenta -> __toString();
