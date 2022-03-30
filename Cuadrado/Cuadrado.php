@@ -11,8 +11,9 @@ class Cuadrado{
     private $verticeB;
     private $verticeC;
     private $verticeD;
-
     //Los parametros son arreglos asociativos de la forma ["x" => x, "y" => y]
+
+    //FUNCION CONSTRUCTORA
     public function __construct($a, $b, $c, $d)
     {
         $this->verticeA = $a;
@@ -21,7 +22,7 @@ class Cuadrado{
         $this->verticeD = $d;
     }
 
-    //OBSERVADORES
+    //FUNCIONES DE ACCESO
     public function getVerticeA(){
         return $this->verticeA;
     }
@@ -34,7 +35,7 @@ class Cuadrado{
     public function getVerticeD(){
         return $this->verticeD;
     }
-    //MODIFICADORES
+
     public function setVerticeA($x){
         $this->verticeA = $x;
     }
@@ -47,7 +48,7 @@ class Cuadrado{
     public function setVerticeD($x){
         $this->verticeD = $x;
     }
-    //
+    
 
     /**
      * Funcion que retorna el area de un cuadrado.
@@ -61,6 +62,7 @@ class Cuadrado{
 
     /**
      * Calcula cuanto mide un lado (al ser un cuadrado todos los lados son iguales)
+     * @return int $lado
      */
     private function lado(){
         return abs($this->getVerticeA()["x"]- $this->getVerticeB()["x"]);
@@ -82,7 +84,7 @@ class Cuadrado{
                             "y" => abs($this->getVerticeC()["y"])]);
     }                    
     /**
-     * Recive el tamaño que debe aumentar el cuadrado
+     * Recibe el tamaño que debe aumentar el cuadrado
      * @param int $aumento
      */
     public function aumentarTamanio($aumento){
@@ -94,6 +96,11 @@ class Cuadrado{
         //al punto D le aumento "x"
         $this->verticeD["x"]+=$aumento;
     }
+
+    /**
+     * Retorna un string con los atributos del objeto
+     * @return String
+     */
     public function __toString()
     {
         return " 
